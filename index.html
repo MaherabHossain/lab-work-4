@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-work-4</title>
+    <style>
+        p{
+            display: inline;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a = 10;
+        var b = 20;
+        var sum = a+b;
+        document.write("<h1>1.Variable Declare And Simple Calculation</h1>")
+        document.write("<h4>Sum of ",a,' + ',b,' = ',sum)
+        document.write("<h1>2.Program using conditional statement</h1>")
+        var number = 39;
+        document.write("<h4>Number = ",number,"</h4>")
+        if(number<40){
+            document.write("<h4>You are fail </h4>")
+        }else{
+            document.write("<h4>You are passed </h4>")
+        }
+        document.write("<h1>3.Program using for loop</h1>")
+        for (let i = 1; i <= 10; i++) {
+            document.write("<h4>",i,"</h4>")  
+        }
+        document.write("<h1>4.Array</h1>")
+        var arr = [1,4,10,6,3,8]
+        for (let i = 0; i < arr.length; i++) {
+            document.write("<p >",arr[i],"</p>")  
+        }
+        document.write("<h1>Array sorting</h1>")
+        for (var i = 1; i < arr.length; i++)
+            for (var j = 0; j < i; j++)
+                if (arr[i] < arr[j]) {
+                var x = arr[i];
+                arr[i] = arr[j];
+                arr[j] = x;
+        }
+        document.write("<h1>Sorted Array</h1>")
+        for (let i = 0; i < arr.length; i++) {
+            document.write("<p >",arr[i],"</p>")  
+        }
+        document.write("<h1>5.Function</h1>")
+        const ct = 7;
+        const attendance = 10;
+        const viva = 8;
+        const mid = 21;
+        const final = 27;
+        document.write("<h4>CT: ",ct,"</h4>")
+        document.write("<h4>Attendance: ",attendance,"</h4>")
+        document.write("<h4>Viva: ",viva,"</h4>")
+        document.write("<h4>MID: ",mid,"</h4>")
+        document.write("<h4>FINAL: ",final,"</h4>")
+
+        function calculate(ct,attendance,viva,mid,final) {
+            var sum = ct+attendance+viva+mid+final;
+            return sum;
+        }
+        const totalNumber = calculate(ct,attendance,viva,mid,final)
+        document.write("<h4>Total:",totalNumber,"</h4>")
+        
+        
+    </script>
+</body>
+</html>
